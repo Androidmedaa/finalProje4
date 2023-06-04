@@ -12,7 +12,7 @@ class BeyazYaka(Calisan):
         self.__tesvik_primi = tesvik_primi
 
     def zam_hakki(self):
-        """try:
+        try:
             if self.get_tecrube() < 2:
                 return self.get_tesvik_primi()
             elif 2 <= self.get_tecrube() <= 4 and self.get_maas() < 15000:
@@ -22,7 +22,7 @@ class BeyazYaka(Calisan):
             else:
                 return self.get_maas()
         except Exception as e:
-            print("Hata oluştu:", str(e))"""
+            print("Hata oluştu:", str(e))
 
     def __str__(self):
         try:
