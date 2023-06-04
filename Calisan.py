@@ -22,7 +22,14 @@ from Calisan(Insan):
   def set_maas(self, maas):
         self.__maas = maas
   def zam_hakki(self):
-    pass
+        if self.__tecrube < 2:
+            return 0
+        elif 2 <= self.__tecrube <= 4 and self.__maas < 15000:
+            return self.__maas * (self.__tecrube / 100)
+        elif self.__tecrube > 4 and self.__maas < 25000:
+            return (self.__maas * (self.__tecrube / 100)) / 2
+        else:
+            return self.__maas
   def __str__(self):
     try:
       self.zam_hakki()
